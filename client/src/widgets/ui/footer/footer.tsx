@@ -1,6 +1,6 @@
 import React from "react"
 import { styled } from "@mui/material"
-import { SubTitle } from "../../../shared/ui/subtitle"
+import { Company } from "../../../features/user/ui"
 
 const CustomFooter = styled("footer")({
   maxWidth: "100%",
@@ -14,7 +14,7 @@ const CustomFooter = styled("footer")({
 export const Footer: React.FC = () => {
   return (
     <CustomFooter>
-      <SubTitle>Some Company 2024</SubTitle>
+      <Company>Some Company 2024</Company>
     </CustomFooter>
   )
 }

@@ -7,10 +7,21 @@ export const register = (req: Request, res: Response) => {
     if (!name || !email || !message) {
       res.status(400).json({ message: "All fields are required!" });
     }
-    console.log({ name, email, message });
+    console.log({
+      name,
+      email,
+      message,
+      status: `Thank you for your interest, ${name}`,
+    });
+
     res
       .status(200)
-      .json({ message: `Thank you for your interest, ${name}` })
+      .json({
+        name,
+        email,
+        message,
+        status: `Thank you for your interest, ${name}`,
+      })
       .end();
   } catch (error) {
     console.log(error);

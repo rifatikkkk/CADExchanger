@@ -1,7 +1,6 @@
 import React from "react"
 import { styled } from "@mui/material/styles"
-import { Button } from "../../../shared/ui/button"
-import { SubTitle } from "../../../shared/ui/subtitle"
+import { Company, ContactUs } from "../../../features/user/ui"
 
 const CustomHeader = styled("header")({
   maxWidth: "100%",
@@ -17,8 +16,8 @@ const CustomHeader = styled("header")({
 export const Header: React.FC = () => {
   return (
     <CustomHeader>
-      <SubTitle>Some Company</SubTitle>
-      <Button variant="contained">Contact us</Button>
+      <Company>Some Company</Company>
+      <ContactUs />
     </CustomHeader>
   )
 }

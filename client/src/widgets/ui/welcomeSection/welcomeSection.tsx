@@ -24,7 +24,9 @@ export const WelcomeSection: React.FC = () => {
   return (
     <CustomWelcomeSection>
       <CustomContent>
-        <Title>Most important title on the page</Title>
+        <Title color="#0C0C0D" fontSize="48px">
+          Most important title on the page
+        </Title>
         <Text color="#1E1E1E">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
           mattis, leo et condimentum ultricies, sem urna convallis metus, vel

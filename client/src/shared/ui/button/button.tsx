@@ -5,6 +5,8 @@ import MuiButton, { ButtonProps } from "@mui/material/Button"
 type Props = {
   children: string
   variant: "text" | "outlined" | "contained"
+  type?: "button" | "submit"
+  onClick?: React.MouseEventHandler<HTMLElement>
 }
 
 const CustomButton = styled(MuiButton)<ButtonProps>(({ variant }) => ({
@@ -18,6 +20,10 @@ const CustomButton = styled(MuiButton)<ButtonProps>(({ variant }) => ({
   padding: "5px 47px",
 }))
 
-export const Button: React.FC<Props> = ({ children }) => {
-  return <CustomButton>{children}</CustomButton>
+export const Button: React.FC<Props> = ({ children, type, onClick }) => {
+  return (
+    <CustomButton type={type} onClick={onClick}>
+      {children}
+    </CustomButton>
+  )
 }

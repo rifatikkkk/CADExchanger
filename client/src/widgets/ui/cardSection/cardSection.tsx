@@ -1,8 +1,8 @@
 import React from "react"
 import { styled } from "@mui/material"
 import { Title } from "../../../shared/ui/title"
-import { Button } from "../../../shared/ui/button"
 import { Card } from "../../../shared/ui/card"
+import { ContactUs } from "../../../features/user/ui"
 
 const CustomCardSection = styled("section")({
   padding: "48px 45px 43px",
@@ -24,7 +24,9 @@ const CustomCards = styled("article")({
 export const CardSection: React.FC = () => {
   return (
     <CustomCardSection>
-      <Title>Also very important title</Title>
+      <Title color="#1E1E1E" fontSize="48px">
+        Also very important title
+      </Title>
       <CustomCards>
         <Card />
         <Card />
@@ -33,7 +35,7 @@ export const CardSection: React.FC = () => {
         <Card />
         <Card />
       </CustomCards>
-      <Button variant="contained">Contact us</Button>
+      <ContactUs />
     </CustomCardSection>
   )
 }
