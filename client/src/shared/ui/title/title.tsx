@@ -5,11 +5,12 @@ type Props = {
   children: string | React.ReactNode
   color: string
   fontSize: string | number
-  textAlign?: string
+  alignText?: "center" | "left" | "right"
 }
 
-const CustomTitle = styled(Typography)({
+const CustomTitle = styled(Typography)<Props>(({ alignText }) => ({
   fontWeight: 700,
+  textAlign: alignText,
 
   "@media (max-width: 1100px)": {
     textAlign: "center",
@@ -18,21 +19,11 @@ const CustomTitle = styled(Typography)({
   "@media (max-width: 500px)": {
     fontSize: "36px",
   },
-})
+}))
 
-export const Title: React.FC<Props> = ({
-  children,
-  fontSize,
-  color,
-  textAlign,
-}) => {
+export const Title: React.FC<Props> = ({ children, fontSize, color }) => {
   return (
-    <CustomTitle
-      variant="h1"
-      fontSize={fontSize}
-      color={color}
-      textAlign={textAlign}
-    >
+    <CustomTitle variant="h1" fontSize={fontSize} color={color}>
       {children}
     </CustomTitle>
   )

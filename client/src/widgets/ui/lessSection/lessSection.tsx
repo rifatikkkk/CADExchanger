@@ -16,7 +16,7 @@ const CustomLessSection = styled("section")({
 export const LessSection: React.FC = () => {
   return (
     <CustomLessSection>
-      <Title color="#1E1E1E" fontSize="48px" textAlign="center">
+      <Title color="#1E1E1E" fontSize="48px" alignText="center">
         Less important title
       </Title>
       <ContactUs />
