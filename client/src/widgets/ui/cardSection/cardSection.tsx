@@ -24,7 +24,7 @@ const CustomCards = styled("article")({
 export const CardSection: React.FC = () => {
   return (
     <CustomCardSection>
-      <Title color="#1E1E1E" fontSize="48px">
+      <Title color="#1E1E1E" fontSize="48px" textAlign="center">
         Also very important title
       </Title>
       <CustomCards>

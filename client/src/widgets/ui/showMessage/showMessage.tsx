@@ -1,12 +1,13 @@
 import React from "react"
 import { styled } from "@mui/material"
-import { Title } from "../../../shared/ui/title"
+import { BigTitle } from "../../../shared/ui/bigTitle"
 
 type Props = {
   children: string | React.ReactNode
 }
 
 const CustomUserOutput = styled("section")({
+  padding: "28px 45px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -18,9 +19,7 @@ const CustomUserOutput = styled("section")({
 export const ShowMessage: React.FC<Props> = ({ children }) => {
   return (
     <CustomUserOutput>
-      <Title color="#2C2C2C" fontSize="72px">
-        {children}
-      </Title>
+      <BigTitle>{children}</BigTitle>
     </CustomUserOutput>
   )
 }

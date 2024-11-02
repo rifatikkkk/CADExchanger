@@ -16,6 +16,10 @@ const CustomForm = styled("form")({
   backgroundColor: "white",
   border: "1px solid #D9D9D9",
   width: "320px",
+
+  "@media (max-width: 500px)": {
+    maxWidth: "100%",
+  },
 })
 
 const CustomInput = styled(Box)<BoxProps>({
@@ -51,15 +55,21 @@ export const FormData: React.FC = () => {
   return (
     <CustomForm onSubmit={handleSubmit(onSubmit)}>
       <CustomInput>
-        <Text color="#1E1E1E">Name</Text>
+        <Text color="#1E1E1E" isField={true}>
+          Name
+        </Text>
         <Input name="name" type="text" control={control} />
       </CustomInput>
       <CustomInput>
-        <Text color="#1E1E1E">Email</Text>
+        <Text color="#1E1E1E" isField={true}>
+          Email
+        </Text>
         <Input name="email" type="email" control={control} />
       </CustomInput>
       <CustomInput>
-        <Text color="#1E1E1E">Message</Text>
+        <Text color="#1E1E1E" isField={true}>
+          Message
+        </Text>
         <Input name="message" type="text" control={control} minHeight="80px" />
       </CustomInput>
       <Button variant="contained" type="submit">

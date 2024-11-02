@@ -11,6 +11,11 @@ const CustomWelcomeSection = styled("section")({
   flexDirection: "row",
   justifyContent: "space-between",
   alignItems: "center",
+  gap: "20px",
+
+  "@media (max-width: 1100px)": {
+    flexDirection: "column",
+  },
 })
 
 const CustomContent = styled("article")({
@@ -18,6 +23,14 @@ const CustomContent = styled("article")({
   flexDirection: "column",
   gap: "25px",
   maxWidth: "420px",
+
+  "@media (max-width: 1100px)": {
+    maxWidth: "80%",
+  },
+
+  "@media (max-width: 980px)": {
+    maxWidth: "100%",
+  },
 })
 
 export const WelcomeSection: React.FC = () => {

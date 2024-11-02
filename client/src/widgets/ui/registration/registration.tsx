@@ -1,9 +1,10 @@
 import React from "react"
 import { styled } from "@mui/material"
-import { Title } from "../../../shared/ui/title"
 import { FormData } from "../../../features/user/ui"
+import { BigTitle } from "../../../shared/ui/bigTitle"
 
 const CustomUserRegistration = styled("section")({
+  padding: "28px 45px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -16,9 +17,7 @@ const CustomUserRegistration = styled("section")({
 export const Registration: React.FC = () => {
   return (
     <CustomUserRegistration>
-      <Title color="#2C2C2C" fontSize="72px">
-        Only CTA on the page
-      </Title>
+      <BigTitle>Only CTA on the page</BigTitle>
       <FormData />
     </CustomUserRegistration>
   )
