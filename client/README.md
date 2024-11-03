@@ -32,3 +32,7 @@ npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
 - [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
 - [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
 - [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+
+## About Render Hosting
+
+Render is a unified cloud to build and run all your apps and websites with free TLS certificates, global CDN, private networks and auto deploys from Git.
