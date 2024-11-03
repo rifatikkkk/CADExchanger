@@ -10,3 +10,5 @@
 ## About Render Hosting
 
 Render is a unified cloud to build and run all your apps and websites with free TLS certificates, global CDN, private networks and auto deploys from Git.
+
+Deploy URL: `https://cadexchangerserver.onrender.com/api`
